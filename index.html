@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR YOU</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div id="my"></div>
+    
+</div>
+
+
+<script>
+    function validatePassword(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        const passwordInput = document.getElementById('password').value;
+        const predefinedPassword = 'MyBatman';
+
+        if (passwordInput === predefinedPassword) {
+            alert('Password is correct!');
+
+                window.location.href = ' https://titibae21.github.io/myfav.com/';
+        } else {
+            alert('Incorrect password. Please try again . Hint  : You');
+        }
+    }
+</script>
+    <div class="container">
+    <form onsubmit="validatePassword(event)">
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+        </div>
+        <button type="submit">Submit</button>
+      
+    </form>
+
+  </body>
+</html>
+
+
